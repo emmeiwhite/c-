@@ -4,6 +4,7 @@ using namespace std;
 int main() {
     // Let's declare some variables to hold values of particular type because "every value has a type that determines its role and every value is nothing but a piece of information"
 
+   /* ---
     int num = 23;
     cout << num << endl;
 
@@ -22,8 +23,47 @@ int main() {
 
     cout << "size of d is :" << sizeof(d);
 
+    --- */
 
 
+    /* --- 
+    // TypeCasting:
+    int a = 'a';
+
+    cout << a << endl; // C++ does the type-casting for us, 'a' character is converted internally to an integer
+
+    char ch = 99;
+
+    cout << ch << endl; // typescript in action
+
+    // Now if we try to add a number greater than 255 in char type, since the largest ASCII value is 255
+
+    char ch1 = 12345;
+
+    cout << ch1;
+
+   
+
+    unsigned int x = 23;
+    cout << x << endl;
+
+    unsigned int x1 = -23; // 2's compliment happen for 23 and it becomes a huge number
+    cout << x1 << endl;
+ 
+ 
+    --- */
+
+    // OPERATORS: Arithmetic, Relational, Logical
+
+    int a = 4;
+    int b = 5;
+
+    cout << a / b << endl; // int/int = int
+
+    float num1 = 4.0;
+    int num2 = 5;
+
+    cout << num1 / num2 << endl; // float/int = int
 
     return 0;
 }
