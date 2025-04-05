@@ -51,7 +51,7 @@ int main() {
     cout << x1 << endl;
  
  
-    --- */
+  
 
     // OPERATORS: Arithmetic, Relational, Logical
 
@@ -64,6 +64,41 @@ int main() {
     int num2 = 5;
 
     cout << num1 / num2 << endl; // float/int = int
+    --- */
+
+
+    /** --- Relational Operators 
+    int a = 2;
+    int b = 3;
+
+    bool first = (a == b);
+    cout << first << endl; // 0 means false
+
+
+    bool second = (a < b);
+    cout << second << endl; // 1 means true
+
+    bool third = (a > b);
+    cout << third << endl; // 0 
+
+    bool fourth = (a >= b);
+    cout << fourth << endl; // 0 
+
+
+    // Logical operator
+    int a = 0;
+    cout << !a << endl;
+
+    --- */
+    // Let's take inputs from the user with cin
+
+    int x;
+
+    cin >> x;
+    
+
+    cout << x << endl;
+    cout << "all good!";
 
     return 0;
 }
