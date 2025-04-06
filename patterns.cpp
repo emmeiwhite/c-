@@ -98,6 +98,7 @@ int main()
 
     // Alternate Solution: A more straight forward logic would be to start j from 3 upto 1 included
 
+    /* ---
     int i = 1;
     while (i <= n)
     {
@@ -106,6 +107,52 @@ int main()
         {
             cout << j << " ";
             j--;
+        }
+        cout << endl;
+        i++;
+    }
+        --- */
+
+    /*
+    1 2 3
+    4 5 6
+    7 8 9
+
+
+    int i = 0;
+    while (i < n)
+    {
+        int j = 1;
+
+        while (j <= n)
+        {
+            cout << i * n + j << " ";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+   */
+
+    /*
+     Stars Right angled triangle
+     *
+     * *
+     * * *
+     * * * *
+
+     Here rows:1-->4
+     For each row, we are printing exactly the i times
+    */
+
+    int i = 1;
+    while (i <= n)
+    {
+        int j = 1;
+        while (j <= i)
+        {
+            cout << j << " ";
+            j++;
         }
         cout << endl;
         i++;
