@@ -190,7 +190,7 @@ int main()
 
     [ inner-loop runs upto row value ] Observation one
      [output the count value]
-    */
+
 
     int count = 1;
 
@@ -203,6 +203,41 @@ int main()
             cout << count << " ";
             j++;
             count++; // count is making it work - wowww
+        }
+        cout << endl;
+        i++;
+    }
+        */
+
+    /*
+        1
+        2 3
+        3 4 5
+        4 5 6 7
+
+        IDEA:
+        - Each
+
+        Row-1   1
+        Row-2   2 3
+        Row-3   3 4 5
+        Row-4   4 5 6 7
+
+        Each column value starts with the row value. And that's the idea.
+        Also, j runs exactly i times,
+        Now, we have to think what to output, So, within the first loop, let's define a variable equal to i and output it and increment it.
+    */
+
+    int i = 1;
+    while (i <= n)
+    {
+        int j = 1;
+        int output = i;
+        while (j <= i)
+        {
+            cout << output << " ";
+            j++;
+            output++; // count is making it work - wowww
         }
         cout << endl;
         i++;
