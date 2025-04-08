@@ -143,7 +143,7 @@ int main()
 
      Here rows:1-->4
      For each row, we are printing exactly the i times
-    */
+
 
     int i = 1;
     while (i <= n)
@@ -157,5 +157,56 @@ int main()
         cout << endl;
         i++;
     }
+
+      */
+
+    /*
+      1
+      2 2
+      3 3 3
+      4 4 4 4
+
+
+    int i = 1;
+    while (i <= n)
+    {
+        int j = 1;
+        while (j <= i)
+        {
+            cout << i << " ";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+
+     */
+
+    /* --- To render this, we introduce a count variable outside the loop from 1 and increment it
+    1
+    2 3
+    4 5 6
+    7 8 9 10
+
+    [ inner-loop runs upto row value ] Observation one
+     [output the count value]
+    */
+
+    int count = 1;
+
+    int i = 1;
+    while (i <= n)
+    {
+        int j = 1;
+        while (j <= i)
+        {
+            cout << count << " ";
+            j++;
+            count++; // count is making it work - wowww
+        }
+        cout << endl;
+        i++;
+    }
+
     return 0;
 }
