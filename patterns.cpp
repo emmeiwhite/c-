@@ -292,19 +292,35 @@ int main()
     B B B
     C C C
     */
+    /* ---
+        char ch = 65;
+        int i = 1;
+        while (i <= n)
+        {
+            int j = 1; // j starts from i each time
+            while (j <= n)
+            {
+                cout << ch << " ";
+                j++;
+            }
+            cout << endl;
+            ch++;
+            i++;
+        }
+    --- */
 
-    char ch = 65;
-    int i = 1;
-    while (i <= n)
+    // Alternative Logic with i, cout << 'A'+i
+    int i = 0;
+    while (i < n)
     {
         int j = 1; // j starts from i each time
         while (j <= n)
         {
+            char ch = 'A' + i;
             cout << ch << " ";
             j++;
         }
         cout << endl;
-        ch++;
         i++;
     }
     return 0;
