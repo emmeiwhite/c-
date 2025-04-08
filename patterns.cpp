@@ -226,8 +226,9 @@ int main()
         Each column value starts with the row value. And that's the idea.
         Also, j runs exactly i times,
         Now, we have to think what to output, So, within the first loop, let's define a variable equal to i and output it and increment it.
-    */
 
+
+    // A very cure problem at hand
     int i = 1;
     while (i <= n)
     {
@@ -242,6 +243,27 @@ int main()
         cout << endl;
         i++;
     }
+ */
+    // An Alternate solution: Which really makes me feel good to have it done!
 
+    int i = 1;
+    while (i <= n)
+    {
+        int j = 0;
+        while (j < i)
+        {
+            cout << i + j << " ";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+
+    /*
+    1
+    2 1
+    3 2 1
+    4 3 2 1
+    */
     return 0;
 }
