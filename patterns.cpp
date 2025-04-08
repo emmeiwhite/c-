@@ -244,26 +244,68 @@ int main()
         i++;
     }
  */
-    // An Alternate solution: Which really makes me feel good to have it done!
-
-    int i = 1;
-    while (i <= n)
-    {
-        int j = 0;
-        while (j < i)
-        {
-            cout << i + j << " ";
-            j++;
-        }
-        cout << endl;
-        i++;
-    }
 
     /*
+       // An Alternate solution: Which really makes me feel good to have it done!
+
+       int i = 1;
+       while (i <= n)
+       {
+           int j = 0;
+           while (j < i)
+           {
+               cout << i + j << " ";
+               j++;
+           }
+           cout << endl;
+           i++;
+       }
+
+       */
+
+    /* --- I have always yearned to be a good problem-solver, then be the best. This course is helping me set the foundations. Thanks to CodeHelp & Love Babbar
     1
     2 1
     3 2 1
     4 3 2 1
     */
+
+    // An Alternate solution: Which really makes me feel good to have it done!
+    /* ---
+        int i = 1;
+        while (i <= n)
+        {
+            int j = i; // j starts from i each time
+            while (j >= 1)
+            {
+                cout << j << " ";
+                j--;
+            }
+            cout << endl;
+            i++;
+        }
+
+        --- */
+
+    /*
+    A A A
+    B B B
+    C C C
+    */
+
+    char ch = 65;
+    int i = 1;
+    while (i <= n)
+    {
+        int j = 1; // j starts from i each time
+        while (j <= n)
+        {
+            cout << ch << " ";
+            j++;
+        }
+        cout << endl;
+        ch++;
+        i++;
+    }
     return 0;
 }
